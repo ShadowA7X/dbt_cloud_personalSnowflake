@@ -1,12 +1,5 @@
 version: 2
 
-sources:
-  - name: snow_preset_tables
-    database: SNOW_PRESET_TABLES
-    schema: PUBLIC
-    tables:
-      - name: INTERNATIONAL_SUPERMARKET
-
 models:
   - name: my_first_dbt_model
     description: "A starter dbt model"
@@ -25,11 +18,3 @@ models:
         tests:
           - unique
           - not_null
-
-  - name: international_supermarket_metrics
-    description: "Model pulling data from international_supermarket"
-    columns:
-      - name: store_id
-        description: "Store identifier"
-      - name: purchase_date
-        description: "Date of the purchase"
